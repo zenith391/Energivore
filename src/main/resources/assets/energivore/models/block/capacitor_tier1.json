@@ -1,6 +1,194 @@
 {
-	"parent": "block/cube_all",
-	"textures": {
-		"all": "energivore:block/capacitor_tier1"
-	}
+    "__comment": "Model generated using MrCrayfish's Model Creator (https://mrcrayfish.com/tools?id=mc)",
+    "textures": {
+        "capacitor_outside": "energivore:block/capacitor_outside",
+        "capacitor_inside": "energivore:block/capacitor_inside"
+    },
+    "display": {
+        "gui": {
+            "rotation": [ 30, 45, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 0.625, 0.625, 0.625 ]
+        },
+        "ground": {
+            "rotation": [ 0, 0, 0 ],
+            "translation": [ 0, 3, 0 ],
+            "scale": [ 0.25, 0.25, 0.25 ]
+        },
+        "fixed": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "head": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, -0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "firstperson_righthand": {
+            "rotation": [ 0, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.4, 0.4, 0.4 ]
+        },
+        "thirdperson_righthand": {
+            "rotation": [ 75, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.375, 0.375, 0.375 ]
+        }
+    },
+    "elements": [
+        {
+            "name": "InnerCube",
+            "from": [ 1, 1, 1 ], 
+            "to": [ 15, 15, 15 ], 
+            "faces": {
+                "north": { "texture": "#capacitor_inside", "uv": [ 0, 0, 14, 14 ] },
+                "east": { "texture": "#capacitor_inside", "uv": [ 0, 0, 14, 14 ] },
+                "south": { "texture": "#capacitor_inside", "uv": [ 0, 0, 14, 14 ] },
+                "west": { "texture": "#capacitor_inside", "uv": [ 0, 0, 14, 14 ] },
+                "up": { "texture": "#capacitor_inside", "uv": [ 0, 0, 14, 14 ] },
+                "down": { "texture": "#capacitor_inside", "uv": [ 0, 0, 14, 14 ] }
+            }
+        },
+        {
+            "name": "OuterPart1",
+            "from": [ 15, 0, 15 ], 
+            "to": [ 16, 16, 16 ], 
+            "faces": {
+                "north": { "texture": "#capacitor_outside", "uv": [ 0, 0, 1, 16 ] },
+                "east": { "texture": "#capacitor_outside", "uv": [ 0, 0, 1, 16 ] },
+                "south": { "texture": "#capacitor_outside", "uv": [ 0, 0, 1, 16 ] },
+                "west": { "texture": "#capacitor_outside", "uv": [ 0, 0, 1, 16 ] },
+                "up": { "texture": "#capacitor_outside", "uv": [ 0, 0, 1, 1 ] },
+                "down": { "texture": "#capacitor_outside", "uv": [ 0, 0, 1, 1 ] }
+            }
+        },
+        {
+            "name": "OuterPart2",
+            "from": [ 15, 0, 0 ], 
+            "to": [ 16, 16, 1 ], 
+            "faces": {
+                "north": { "texture": "#capacitor_outside", "uv": [ 0, 0, 1, 16 ] },
+                "east": { "texture": "#capacitor_outside", "uv": [ 0, 0, 1, 16 ] },
+                "south": { "texture": "#capacitor_outside", "uv": [ 0, 0, 1, 16 ] },
+                "west": { "texture": "#capacitor_outside", "uv": [ 0, 0, 1, 16 ] },
+                "up": { "texture": "#capacitor_outside", "uv": [ 0, 0, 1, 1 ] },
+                "down": { "texture": "#capacitor_outside", "uv": [ 0, 0, 1, 1 ] }
+            }
+        },
+        {
+            "name": "OuterPart3",
+            "from": [ 0, 0, 0 ], 
+            "to": [ 1, 16, 1 ], 
+            "faces": {
+                "north": { "texture": "#capacitor_outside", "uv": [ 0, 0, 1, 16 ] },
+                "east": { "texture": "#capacitor_outside", "uv": [ 0, 0, 1, 16 ] },
+                "south": { "texture": "#capacitor_outside", "uv": [ 0, 0, 1, 16 ] },
+                "west": { "texture": "#capacitor_outside", "uv": [ 0, 0, 1, 16 ] },
+                "up": { "texture": "#capacitor_outside", "uv": [ 0, 0, 1, 1 ] },
+                "down": { "texture": "#capacitor_outside", "uv": [ 0, 0, 1, 1 ] }
+            }
+        },
+        {
+            "name": "OuterPart4",
+            "from": [ 0, 0, 15 ], 
+            "to": [ 1, 16, 16 ], 
+            "faces": {
+                "north": { "texture": "#capacitor_outside", "uv": [ 0, 0, 1, 16 ] },
+                "east": { "texture": "#capacitor_outside", "uv": [ 0, 0, 1, 16 ] },
+                "south": { "texture": "#capacitor_outside", "uv": [ 0, 0, 1, 16 ] },
+                "west": { "texture": "#capacitor_outside", "uv": [ 0, 0, 1, 16 ] },
+                "up": { "texture": "#capacitor_outside", "uv": [ 0, 0, 1, 1 ] },
+                "down": { "texture": "#capacitor_outside", "uv": [ 0, 0, 1, 1 ] }
+            }
+        },
+        {
+            "name": "OuterPart5",
+            "from": [ 1, 15, 15 ], 
+            "to": [ 15, 16, 16 ], 
+            "faces": {
+                "north": { "texture": "#capacitor_outside", "uv": [ 0, 0, 14, 1 ] },
+                "south": { "texture": "#capacitor_outside", "uv": [ 0, 0, 14, 1 ] },
+                "up": { "texture": "#capacitor_outside", "uv": [ 0, 0, 14, 1 ] },
+                "down": { "texture": "#capacitor_outside", "uv": [ 0, 0, 14, 1 ] }
+            }
+        },
+        {
+            "name": "OuterPart6",
+            "from": [ 15, 15, 1 ], 
+            "to": [ 16, 16, 15 ], 
+            "faces": {
+                "east": { "texture": "#capacitor_outside", "uv": [ 0, 0, 14, 1 ] },
+                "west": { "texture": "#capacitor_outside", "uv": [ 0, 0, 14, 1 ] },
+                "up": { "texture": "#capacitor_outside", "uv": [ 0, 0, 1, 14 ] },
+                "down": { "texture": "#capacitor_outside", "uv": [ 0, 0, 1, 14 ] }
+            }
+        },
+        {
+            "name": "OuterPart7",
+            "from": [ 1, 15, 0 ], 
+            "to": [ 15, 16, 1 ], 
+            "faces": {
+                "north": { "texture": "#capacitor_outside", "uv": [ 0, 0, 14, 1 ] },
+                "south": { "texture": "#capacitor_outside", "uv": [ 0, 0, 14, 1 ] },
+                "up": { "texture": "#capacitor_outside", "uv": [ 0, 0, 14, 1 ] },
+                "down": { "texture": "#capacitor_outside", "uv": [ 0, 0, 14, 1 ] }
+            }
+        },
+        {
+            "name": "OuterPart8",
+            "from": [ 0, 15, 1 ], 
+            "to": [ 1, 16, 15 ], 
+            "faces": {
+                "east": { "texture": "#capacitor_outside", "uv": [ 0, 0, 14, 1 ] },
+                "west": { "texture": "#capacitor_outside", "uv": [ 0, 0, 14, 1 ] },
+                "up": { "texture": "#capacitor_outside", "uv": [ 0, 0, 1, 14 ] },
+                "down": { "texture": "#capacitor_outside", "uv": [ 0, 0, 1, 14 ] }
+            }
+        },
+        {
+            "name": "OuterPart9",
+            "from": [ 0, 0, 1 ], 
+            "to": [ 1, 1, 15 ], 
+            "faces": {
+                "east": { "texture": "#capacitor_outside", "uv": [ 0, 0, 14, 1 ] },
+                "west": { "texture": "#capacitor_outside", "uv": [ 0, 0, 14, 1 ] },
+                "up": { "texture": "#capacitor_outside", "uv": [ 0, 0, 1, 14 ] },
+                "down": { "texture": "#capacitor_outside", "uv": [ 0, 0, 1, 14 ] }
+            }
+        },
+        {
+            "name": "OuterPart10",
+            "from": [ 1, 0, 0 ], 
+            "to": [ 15, 1, 1 ], 
+            "faces": {
+                "north": { "texture": "#capacitor_outside", "uv": [ 0, 0, 14, 1 ] },
+                "south": { "texture": "#capacitor_outside", "uv": [ 0, 0, 14, 1 ] },
+                "up": { "texture": "#capacitor_outside", "uv": [ 0, 0, 14, 1 ] },
+                "down": { "texture": "#capacitor_outside", "uv": [ 0, 0, 14, 1 ] }
+            }
+        },
+        {
+            "name": "OuterPart11",
+            "from": [ 15, 0, 1 ], 
+            "to": [ 16, 1, 15 ], 
+            "faces": {
+                "east": { "texture": "#capacitor_outside", "uv": [ 0, 0, 14, 1 ] },
+                "west": { "texture": "#capacitor_outside", "uv": [ 0, 0, 14, 1 ] },
+                "up": { "texture": "#capacitor_outside", "uv": [ 0, 0, 1, 14 ] },
+                "down": { "texture": "#capacitor_outside", "uv": [ 0, 0, 1, 14 ] }
+            }
+        },
+        {
+            "name": "OuterPart12",
+            "from": [ 1, 0, 15 ], 
+            "to": [ 15, 1, 16 ], 
+            "faces": {
+                "north": { "texture": "#capacitor_outside", "uv": [ 0, 0, 14, 1 ] },
+                "south": { "texture": "#capacitor_outside", "uv": [ 0, 0, 14, 1 ] },
+                "up": { "texture": "#capacitor_outside", "uv": [ 0, 0, 14, 1 ] },
+                "down": { "texture": "#capacitor_outside", "uv": [ 0, 0, 14, 1 ] }
+            }
+        }
+    ]
 }

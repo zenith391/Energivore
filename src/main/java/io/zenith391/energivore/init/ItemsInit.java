@@ -3,6 +3,8 @@ package io.zenith391.energivore.init;
 import java.util.HashMap;
 
 import io.zenith391.energivore.EnergivoreMod;
+import io.zenith391.energivore.item.EnergyBlockItem;
+import nerdhub.cardinal.components.api.BlockComponentProvider;
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -23,7 +25,11 @@ public class ItemsInit {
 	public static void registerAll() {
 		for (String key : BlocksInit.REGISTERED_BLOCKS.keySet()) {
 			Block b = BlocksInit.REGISTERED_BLOCKS.get(key);
-			register(key, new BlockItem(b, new Item.Settings().itemGroup(EnergivoreMod.ENERGIVORE_GROUP)));
+			if (b instanceof BlockComponentProvider) {
+				register(key, new EnergyBlockItem(b, EnergivoreMod.ENERGIVORE_GROUP));
+			} else {
+				register(key, new BlockItem(b, new Item.Settings().itemGroup(EnergivoreMod.ENERGIVORE_GROUP)));
+			}
 		}
 	}
 	

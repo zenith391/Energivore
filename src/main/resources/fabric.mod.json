@@ -22,9 +22,6 @@
       "io.zenith391.energivore.EnergivoreMod"
     ]
   },
-  "mixins": [
-    "energivore.mixins.json"
-  ],
 
   "requires": {
     "fabricloader": ">=0.4.0",
