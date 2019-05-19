@@ -1,0 +1,7 @@
+{
+	"variants": {
+		"": {
+			"model": "energivore:block/capacitor_tier1"
+		}
+	}
+}

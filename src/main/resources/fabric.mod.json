@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "energivore",
+  "version": "${version}",
+
+  "name": "Energive",
+  "description": "Adds ton of blocks and items for energy in Fabric!",
+  "authors": [
+    "zenith391"
+  ],
+  "contact": {
+    "sources": "https://github.com/zenith391/Energivore",
+	"issues": "https//github.com/zenith391/Energivore/issues"
+  },
+
+  "license": "GNU GPL v3",
+  "icon": "assets/energivore/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "io.zenith391.energivore.EnergivoreMod"
+    ]
+  },
+  "mixins": [
+    "energivore.mixins.json"
+  ],
+
+  "requires": {
+    "fabricloader": ">=0.4.0",
+    "fabric": "*"
+  },
+  "suggests": {
+    "flamingo": "*"
+  }
+}
