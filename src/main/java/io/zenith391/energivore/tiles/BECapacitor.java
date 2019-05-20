@@ -4,15 +4,20 @@ import io.zenith391.energivore.init.BlocksInit;
 import nerdhub.cardinalenergy.api.IEnergyHandler;
 import nerdhub.cardinalenergy.impl.EnergyStorage;
 import net.minecraft.block.entity.BlockEntity;
+import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.util.math.Direction;
 
 public class BECapacitor extends BlockEntity implements IEnergyHandler {
 
-	private EnergyStorage storage;
+	protected EnergyStorage storage;
 	
 	public BECapacitor() {
 		this(0);
+	}
+	
+	public BECapacitor(BlockEntityType<?> type) {
+		super(type);
 	}
 	
 	public BECapacitor(int size) {

@@ -7,6 +7,7 @@ import io.zenith391.energivore.EnergivoreMod;
 import io.zenith391.energivore.block.BlockCableT1;
 import io.zenith391.energivore.block.BlockCapacitorT1;
 import io.zenith391.energivore.tiles.BECapacitor;
+import io.zenith391.energivore.tiles.BlockEntityCable;
 import net.minecraft.block.Block;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.block.entity.BlockEntityType;
@@ -17,6 +18,7 @@ public class BlocksInit {
 
 	public static final HashMap<String, Block> REGISTERED_BLOCKS = new HashMap<>();
 	public static BlockEntityType<BECapacitor> CAPACITOR; 
+	public static BlockEntityType<BlockEntityCable> CABLE;
 	
 	public static BlockCapacitorT1 capacitorT1;
 	public static BlockCableT1     cableT1;
@@ -43,9 +45,10 @@ public class BlocksInit {
 	
 	public static void registerAll() {
 		capacitorT1 = new BlockCapacitorT1();
-		cableT1 = new BlockCableT1();
+		cableT1     = new BlockCableT1();
 		
 		CAPACITOR = registerBlockEntity("capacitor", BECapacitor.class);
+		CABLE     = registerBlockEntity("cable", BlockEntityCable.class);
 		
 		register("capacitor_tier1", capacitorT1);
 		register("cable_tier1", cableT1);

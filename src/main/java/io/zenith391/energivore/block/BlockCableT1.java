@@ -6,6 +6,7 @@ import java.util.Set;
 
 import io.zenith391.energivore.init.ItemsInit;
 import io.zenith391.energivore.tiles.BECapacitor;
+import io.zenith391.energivore.tiles.BlockEntityCable;
 import nerdhub.cardinal.components.api.BlockComponentProvider;
 import nerdhub.cardinal.components.api.ComponentType;
 import nerdhub.cardinal.components.api.component.Component;
@@ -53,7 +54,7 @@ public class BlockCableT1 extends BlockWithEntity implements BlockComponentProvi
 	
 	@Override
     public BlockEntity createBlockEntity(BlockView blockView) {
-        return new BECapacitor(getCapacity());
+        return new BlockEntityCable(getCapacity());
     }
 
     /**
@@ -85,14 +86,14 @@ public class BlockCableT1 extends BlockWithEntity implements BlockComponentProvi
 
 	@Override
 	public int getCapacity() {
-		return 50;
+		return 100; // 50 CE/t
 	}
 
 	@Override
 	public int getEnergy(World world, BlockPos pos) {
 		BlockEntity entity = world.getBlockEntity(pos);
 		if (entity == null) {
-			System.out.println("Null tile entity. Consider that an error!");
+			System.err.println("Null tile entity. Consider that an error!");
 		} else {
 			return getEnergy(world, entity);
 		}
