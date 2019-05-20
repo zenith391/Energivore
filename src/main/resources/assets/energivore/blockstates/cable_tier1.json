@@ -1,0 +1,7 @@
+{
+	"variants": {
+		"west-east": {
+			"model": "energivore:block/cable_tier1_we"
+		}
+	}
+}

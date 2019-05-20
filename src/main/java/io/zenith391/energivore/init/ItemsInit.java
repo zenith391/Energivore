@@ -8,7 +8,6 @@ import nerdhub.cardinal.components.api.BlockComponentProvider;
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
@@ -23,6 +22,8 @@ public class ItemsInit {
 	}
 	
 	public static void registerAll() {
+		
+		
 		for (String key : BlocksInit.REGISTERED_BLOCKS.keySet()) {
 			Block b = BlocksInit.REGISTERED_BLOCKS.get(key);
 			if (b instanceof BlockComponentProvider) {

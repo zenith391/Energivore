@@ -1,5 +1,6 @@
 package io.zenith391.energivore.tiles;
 
+import io.zenith391.energivore.init.BlocksInit;
 import nerdhub.cardinalenergy.api.IEnergyHandler;
 import nerdhub.cardinalenergy.impl.EnergyStorage;
 import net.minecraft.block.entity.BlockEntity;
@@ -10,8 +11,12 @@ public class BECapacitor extends BlockEntity implements IEnergyHandler {
 
 	private EnergyStorage storage;
 	
+	public BECapacitor() {
+		this(0);
+	}
+	
 	public BECapacitor(int size) {
-		super(null);
+		super(BlocksInit.CAPACITOR);
 		storage = new EnergyStorage(size);
 	}
 	

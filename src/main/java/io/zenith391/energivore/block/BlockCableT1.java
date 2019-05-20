@@ -24,9 +24,9 @@ import net.minecraft.world.World;
 import net.minecraft.world.loot.context.LootContextParameters;
 import net.minecraft.world.loot.context.LootContext.Builder;
 
-public class BlockCapacitorT1 extends BlockWithEntity implements BlockComponentProvider, IBlockCapacitor {
+public class BlockCableT1 extends BlockWithEntity implements BlockComponentProvider, IBlockCapacitor {
 	
-	public BlockCapacitorT1() {
+	public BlockCableT1() {
 		super(FabricBlockSettings.of(Material.METAL)
 				.drops(null)
 				.hardness(1.5f)
@@ -36,7 +36,7 @@ public class BlockCapacitorT1 extends BlockWithEntity implements BlockComponentP
 	
 	@Override
 	public List<ItemStack> getDroppedStacks(BlockState state, Builder builder) {
-		ItemStack stack = new ItemStack(ItemsInit.REGISTERED_ITEMS.get("capacitor_tier1"));
+		ItemStack stack = new ItemStack(ItemsInit.REGISTERED_ITEMS.get("cable_tier1"));
 		stack.setAmount(1);
 		CompoundTag tag = new CompoundTag();
 		tag.putInt("energy", getEnergy(builder.getWorld(), builder.getNullable(LootContextParameters.BLOCK_ENTITY)));
@@ -85,7 +85,7 @@ public class BlockCapacitorT1 extends BlockWithEntity implements BlockComponentP
 
 	@Override
 	public int getCapacity() {
-		return 15000;
+		return 50;
 	}
 
 	@Override

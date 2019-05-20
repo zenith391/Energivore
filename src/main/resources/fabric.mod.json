@@ -3,7 +3,7 @@
   "id": "energivore",
   "version": "${version}",
 
-  "name": "Energive",
+  "name": "Energivore",
   "description": "Adds ton of blocks and items for energy in Fabric!",
   "authors": [
     "zenith391"
@@ -22,10 +22,11 @@
       "io.zenith391.energivore.EnergivoreMod"
     ]
   },
-
   "requires": {
     "fabricloader": ">=0.4.0",
-    "fabric": "*"
+    "fabric": "*",
+    "cardinalenergy": ">=1.0.0",
+    "cardinal_components": ">=1.1.0"
   },
   "suggests": {
     "flamingo": "*"

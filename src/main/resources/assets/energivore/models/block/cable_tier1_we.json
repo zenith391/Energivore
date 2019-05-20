@@ -1,0 +1,94 @@
+{
+    "__comment": "Model generated using MrCrayfish's Model Creator (https://mrcrayfish.com/tools?id=mc)",
+    "textures": {
+        "cable_inside": "energivore:block/cable_inside",
+        "cable_outside_t1": "energivore:block/cable_outside_t1"
+    },
+    "display": {
+        "gui": {
+            "rotation": [ 30, 45, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 0.625, 0.625, 0.625 ]
+        },
+        "ground": {
+            "rotation": [ 0, 0, 0 ],
+            "translation": [ 0, 3, 0 ],
+            "scale": [ 0.25, 0.25, 0.25 ]
+        },
+        "fixed": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "head": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "firstperson_righthand": {
+            "rotation": [ 0, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.4, 0.4, 0.4 ]
+        },
+        "thirdperson_righthand": {
+            "rotation": [ 75, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.375, 0.375, 0.375 ]
+        }
+    },
+    "elements": [
+        {
+            "name": "Inside",
+            "from": [ 0, 6, 5.5 ], 
+            "to": [ 16, 11, 10.5 ], 
+            "faces": {
+                "east": { "texture": "#cable_inside", "uv": [ 0, 0, 5, 5 ] },
+                "west": { "texture": "#cable_inside", "uv": [ 0, 0, 5, 5 ] }
+            }
+        },
+        {
+            "name": "Outside1",
+            "from": [ 0, 5, 4.5 ], 
+            "to": [ 16, 12, 5.5 ], 
+            "faces": {
+                "north": { "texture": "#cable_outside_t1", "uv": [ 0, 0, 16, 7 ] },
+                "east": { "texture": "#cable_outside_t1", "uv": [ 0, 0, 1, 7 ] },
+                "west": { "texture": "#cable_outside_t1", "uv": [ 0, 0, 1, 7 ] },
+                "up": { "texture": "#cable_outside_t1", "uv": [ 0, 0, 16, 1 ] },
+                "down": { "texture": "#cable_outside_t1", "uv": [ 0, 0, 16, 1 ] }
+            }
+        },
+        {
+            "name": "Outside2",
+            "from": [ 0, 5, 10.5 ], 
+            "to": [ 16, 12, 11.5 ], 
+            "faces": {
+                "east": { "texture": "#cable_outside_t1", "uv": [ 0, 0, 1, 7 ] },
+                "south": { "texture": "#cable_outside_t1", "uv": [ 0, 0, 16, 7 ] },
+                "west": { "texture": "#cable_outside_t1", "uv": [ 0, 0, 1, 7 ] },
+                "up": { "texture": "#cable_outside_t1", "uv": [ 0, 0, 16, 1 ] },
+                "down": { "texture": "#cable_outside_t1", "uv": [ 0, 0, 16, 1 ] }
+            }
+        },
+        {
+            "name": "Outside3",
+            "from": [ 0, 11, 5.5 ], 
+            "to": [ 16, 12, 10.5 ], 
+            "faces": {
+                "east": { "texture": "#cable_outside_t1", "uv": [ 0, 0, 5, 1 ] },
+                "west": { "texture": "#cable_outside_t1", "uv": [ 0, 0, 5, 1 ] },
+                "up": { "texture": "#cable_outside_t1", "uv": [ 0, 0, 16, 5 ] }
+            }
+        },
+        {
+            "name": "Outside4",
+            "from": [ 0, 5, 5.5 ], 
+            "to": [ 16, 6, 10.5 ], 
+            "faces": {
+                "east": { "texture": "#cable_outside_t1", "uv": [ 0, 0, 5, 1 ] },
+                "west": { "texture": "#cable_outside_t1", "uv": [ 0, 0, 5, 1 ] },
+                "down": { "texture": "#cable_outside_t1", "uv": [ 0, 0, 16, 5 ] }
+            }
+        }
+    ]
+}
